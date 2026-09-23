@@ -1,0 +1,32 @@
+.warning {
+  height: 3rem;
+  display: none;
+  background-color: var(--color-danger);
+
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 0.8rem;
+  padding: 0.5rem 0.75rem;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & span {
+      font: var(--font-paragraph);
+      color: var(--always-white);
+    }
+  }
+
+  & button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.warning.show-warning {
+  display: flex;
+}

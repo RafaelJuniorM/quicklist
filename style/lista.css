@@ -1,0 +1,37 @@
+.lista-itens {
+    width: 100%;
+    max-height: 30rem;
+    overflow-y: scroll;
+    & li {
+        height: 3rem;
+
+        background-color: var(--background-secondary);
+        padding: .5rem 0.75rem;
+        border-radius: .8rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        margin-bottom: .75rem;
+
+        & label {
+            width: 100%;
+
+            & span {
+                padding-left: 0.75rem;
+                font: var(--font-paragraph);
+                color: var( --content-secondary);
+            }
+
+        
+        }
+    }
+
+    & button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+}

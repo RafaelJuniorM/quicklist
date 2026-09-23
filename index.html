@@ -1,29 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="style/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>quicklist</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="/assets/logo.svg" alt="Logo da quicklist " >
+      <img src="assets/logo.svg" alt="Logo da quicklist " />
     </header>
-    <main>
-        <p> ← Voltar</p>
-        <h1>Compras da semana</h1>
 
-        <form>
-            <label for="item" class="sr-only">Adicionar item</label>
-            <input type="text" name="item" id="item" placeholder="Digite o nome do item" required>
-            <button type="submit">Adicionar item</button>
-        </form>
+    <main>
+      <p>← Voltar</p>
+      <h1>Compras da semana</h1>
+
+      <form>
+        <label for="item" class="sr-only">Adicionar item</label>
+        <input
+          type="text"
+          name="item"
+          id="item"
+          placeholder="Digite o nome do item"
+          required
+        />
+        <button type="submit">Adicionar item</button>
+      </form>
+
+      <ul class="lista-itens">
+        <li>
+          <label>
+            <input type="checkbox" name="" id="" />
+            <span> Pão de forma </span>
+          </label>
+          <button type="button" aria-label="Remover item">
+            <img src="assets/icons/lixeira.svg" />
+          </button>
+        </li>
+      </ul>
     </main>
-</body>
+
+    <div class="warning">
+      <div>
+        <img
+          src="assets/icons/warning-circle-filled.svg"
+          alt="Ícone de alerta"
+        />
+        <span> O item foi removido da lista</span>
+      </div>
+
+      <button type="button" aria-label="Remover item">
+        <img src="assets/icons/close.svg" />
+      </button>
+    </div>
+  </body>
 </html>
