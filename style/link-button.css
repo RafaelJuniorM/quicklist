@@ -1,0 +1,8 @@
+main p {
+    font: var(--font-link);
+    color: var(--color-brand);
+
+    cursor: pointer;
+
+    margin-bottom: 1rem;
+}
