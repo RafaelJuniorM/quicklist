@@ -5,8 +5,8 @@ const form = document.querySelector("form")
 const deleteItem = document.querySelectorAll('[aria-label*="Remover"]');
 const listItem = document.querySelector(".lista-itens li")
 const list = document.querySelector(".lista-itens")
-const warning = document.getElementsByClassName("warning");
-
+const warning = document.querySelector(".warning");
+console.log(warning);
 
 // capturar oque esta sendo digitado no input pelo usuario
 item.addEventListener("input", ()=>{
@@ -43,5 +43,17 @@ function addItemList(item) {
 }
 
 
+// === criando a funçao para deletar um item da lista ===
+list.addEventListener("click", (event) =>{
+    if(event.target.tagName === "IMG") {
+        deletandoItem(event.target);
+        console.log(warning);
+        warning.classList.add("show-warning");
+    }
+    
+})
 
+function deletandoItem(element) {
+    element.closest("li").remove();
+}
 
